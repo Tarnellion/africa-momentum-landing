@@ -1,0 +1,27 @@
+:root { --bg:#0b1220; --card:#121a2b; --text:#e7edf7; --muted:#b7c3d6; --line:#26324a; }
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text)}
+.wrap{max-width:980px;margin:0 auto;padding:20px}
+.hero{padding:10px 0 18px}
+h1{margin:0 0 10px;font-size:32px;line-height:1.1}
+.sub{margin:0;color:var(--muted);font-size:16px;line-height:1.5}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.card h2{margin:0 0 10px;font-size:18px}
+.card ul{margin:0 0 0 18px;color:var(--muted)}
+.mt{margin-top:14px}
+.mock-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.team{font-weight:700;color:var(--muted)}
+.team.right{text-align:right}
+.score{font-size:28px;font-weight:800}
+.pill{margin:12px 0;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:#0e1730;font-weight:700}
+.table{border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.row{display:flex;justify-content:space-between;padding:10px 12px;border-top:1px solid var(--line);color:var(--muted)}
+.row:first-child{border-top:none;color:var(--text);font-weight:800}
+.btn{display:block;text-align:center;margin-top:14px;padding:12px 14px;border-radius:12px;
+  background:#2b5bd7;color:white;text-decoration:none;font-weight:800}
+.footer{padding:16px 0 6px;color:var(--muted);font-size:13px;text-align:center}
+@media (min-width:860px){
+  .grid{grid-template-columns:1.2fr 0.8fr}
+  h1{font-size:44px}
+}
